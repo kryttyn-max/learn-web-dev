@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор даты и времени | Барбершоп</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ШАПКА (Семантический тег header) -->
+    <header class="site-header">
+        <div class="logo">
+            <!-- Иконка логотипа (заглушка) -->
+            <span class="logo-icon">🔲</span>
+            <span class="logo-text">БАРБЕРШОП</span>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="#">Главная</a>
+            <a href="#">Мастера</a>
+            <a href="#">Услуги</a>
+            <a href="#" class="active">Календарь</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <button class="btn-profile">Личный кабинет</button>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ (Семантический тег main) -->
+    <main class="main-content">
+        
+        <!-- Заголовок и хлебные крошки -->
+        <div class="page-header">
+            <p class="breadcrumbs">Главная / Мастера / Услуги / <span>Календарь</span></p>
+            <h1>Выберите дату и время</h1>
+        </div>
+
+        <!-- Блок бронирования (Flexbox контейнер) -->
+        <div class="booking-container">
+            
+            <!-- Левая часть: Календарь -->
+            <div class="calendar-section">
+                <h2 class="section-title">Календарь</h2>
+                <div class="calendar-header">
+                    <button class="nav-btn">&lt;</button>
+                    <span class="current-month">Ноябрь 2026</span>
+                    <button class="nav-btn">&gt;</button>
+                </div>
+                
+                <!-- Сетка календаря -->
+                <div class="calendar-grid">
+                    <div class="day-name">Пн</div>
+                    <div class="day-name">Вт</div>
+                    <div class="day-name">Ср</div>
+                    <div class="day-name">Чт</div>
+                    <div class="day-name">Пт</div>
+                    <div class="day-name">Сб</div>
+                    <div class="day-name">Вс</div>
+                    
+                    <!-- Пример дней (в реальности генерируется JS, но для макета хардкод) -->
+                    <div class="day disabled">26</div>
+                    <div class="day disabled">27</div>
+                    <div class="day disabled">28</div>
+                    <div class="day disabled">29</div>
+                    <div class="day disabled">30</div>
+                    <div class="day disabled">31</div>
+                    <div class="day">1</div>
+                    
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day active">12</div> <!-- Активный день -->
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                </div>
+            </div>
+
+            <!-- Правая часть: Время -->
+            <div class="time-section">
+                <h2 class="section-title">Время</h2>
+                <p class="subtitle">Выберите удобное время</p>
+                
+                <div class="time-grid">
+                    <button class="time-btn">09:00</button>
+                    <button class="time-btn">09:30</button>
+                    <button class="time-btn">10:00</button>
+                    <button class="time-btn">10:30</button>
+                    <button class="time-btn">11:00</button>
+                    <button class="time-btn">11:30</button>
+                    <button class="time-btn">12:00</button>
+                    <button class="time-btn">12:30</button>
+                </div>
+                
+                <button class="btn-submit">Записаться</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ (Семантический тег footer) -->
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <span class="logo-icon">🔲</span>
+            <span class="logo-text">БАРБЕРШОП</span>
+        </div>
+        <div class="footer-info">
+            <p>+7 (999) 123-45-67</p>
+            <p>г. Москва, ул. Пушкина, д. 10</p>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2026 Барбершоп. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
