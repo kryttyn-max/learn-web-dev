@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор даты и времени | Барбершоп</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ШАПКА (Семантический тег header) -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-icon">🔲</span>
+            <span class="logo-text">БАРБЕРШОП</span>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="#">Главная</a>
+            <a href="#">Мастера</a>
+            <a href="#">Услуги</a>
+            <a href="#" class="active">Календарь</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <button class="btn-profile">Личный кабинет</button>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ (Семантический тег main) -->
+    <main class="main-content">
+        
+        <!-- Заголовок и хлебные крошки -->
+        <div class="page-header">
+            <p class="breadcrumbs">Главная / Мастера / Услуги / <span>Календарь</span></p>
+            <h1>Выберите дату и время</h1>
+        </div>
+
+        <!-- Блок бронирования (Flexbox контейнер) -->
+        <div class="booking-container">
+            
+            <!-- Левая часть: Календарь -->
+            <div class="calendar-section">
+                <h2 class="section-title">Календарь</h2>
+                
+                <!-- Шапка календаря со стрелками. Добавлены ID для JS -->
+                <div class="calendar-header">
+                    <button id="prev-month" class="nav-btn">&lt;</button>
+                    <span id="current-month-year" class="current-month">Загрузка...</span>
+                    <button id="next-month" class="nav-btn">&gt;</button>
+                </div>
+                
+                <!-- Сетка календаря. Сюда JS будет вставлять дни -->
+                <div class="calendar-grid" id="calendar-days">
+                    <!-- Содержимое генерируется через script.js -->
+                </div>
+            </div>
+
+            <!-- Правая часть: Время -->
+            <div class="time-section">
+                <h2 class="section-title">Время</h2>
+                <p class="subtitle">Выберите удобное время</p>
+                
+                <!-- Сетка времени. Сюда JS будет вставлять слоты -->
+                <div class="time-grid" id="time-slots">
+                    <!-- Содержимое генерируется через script.js -->
+                </div>
+                
+                <button class="btn-submit">Записаться</button>
+            </div>
+        </div>
+
+        <!-- Нижняя панель (Добавлена для отображения выбранной даты) -->
+        <div id="bottom-bar" class="bottom-bar">Дата и время не выбраны</div>
+
+    </main>
+
+    <!-- ПОДВАЛ (Семантический тег footer) -->
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <span class="logo-icon">🔲</span>
+            <span class="logo-text">БАРБЕРШОП</span>
+        </div>
+        <div class="footer-info">
+            <p>+7 (999) 123-45-67</p>
+            <p>г. Москва, ул. Пушкина, д. 10</p>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2026 Барбершоп. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- ПОДКЛЮЧЕНИЕ СКРИПТА (строго внизу body) -->
+    <script src="script.js"></script>
+</body>
+</html>
